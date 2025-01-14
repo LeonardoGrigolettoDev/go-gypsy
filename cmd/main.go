@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Not implemented")
+	fmt.Println("Not implemented.")
 }
