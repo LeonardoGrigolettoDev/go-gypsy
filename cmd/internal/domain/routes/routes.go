@@ -55,7 +55,7 @@ func SetupRoutes(router *gin.Engine) error {
 					return
 				}
 				log.Printf("Arquivo recebido: %s (tamanho: %d bytes)\n", file.Filename, file.Size)
-				err = loader.CreateFile(*file, "./cmd/files/temp/"+perm+"/"+file.Filename)
+				err = loader.CreateFile(*file, "./files/temp/"+perm+"/"+file.Filename)
 				if err != nil {
 					log.Println(err)
 					c.JSON(500, gin.H{
